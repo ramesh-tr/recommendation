@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     # results
     train_preds = rec.predict(train)
-    train_rmse = RMSE(validation_preds, np.float16(train[:, 2]))
+    train_rmse = RMSE(train_preds, np.float16(train[:, 2]))
     validation_preds = rec.predict(validation)
     validation_rmse = RMSE(validation_preds, np.float16(validation[:, 2]))
 
